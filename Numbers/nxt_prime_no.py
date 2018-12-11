@@ -1,6 +1,5 @@
 #Finding the nex prime no until user chooses to stop
 
-import math
 user_int = raw_input("Do you want to keep finding prime numbers (y/n)? ")
 start = 1
 
