@@ -2,7 +2,7 @@
 create a calculator
 function for adding, subtracting, dividing, and multiplying. 
 """
-import math
+import math, re, sys, os
 
 def add(num1, num2):
   num1 = int(input(" "))
