@@ -118,7 +118,7 @@ def do_convert(conversion):
                                     CONVERT_FROM[conversion][source_unit] * \
                                     CONVERT_TO[conversion][to_unit], to_unit)
   
- def currency():
+def currency():
   amount = str(raw_input("Enter amount to convert: "))
   from_currency = str(raw_input("Enter your source currency(3 digit code): "))
   to_currency = str(raw_input("Enter the currency you would like to convert to(3 digit code): "))
