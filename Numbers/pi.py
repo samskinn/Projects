@@ -14,8 +14,8 @@ round_to = raw_input("Enter how many decimal places of Pi you want: ")
 try:
   round_int = int(roundTo)
   if round_int > 50:
-    print "Integer selected is too large"
+    print("Integer selected is too large")
   else:
-    print defining_pi(round_int)
+    print(defining_pi(round_int))
   except:
-  print "You did not enter an integer"
+  print ("You did not enter an integer")
