@@ -8,13 +8,13 @@ def add(num1, num2):
   num1 = int(input(" "))
   num2 = int(input(" "))
   result = num1 + num2
-  print result
+  print(result)
   
 def sub(num1, num2):
   num1 = int(input(" "))
   num2 = int(input(" "))
   result = num1 - num2
-  print result
+  print(result)
   
 
 
@@ -22,7 +22,7 @@ def div(num1, num2):
   num1 = int(input(" "))
   num2 = int(input(" "))
   result = num1 / num2
-  print result
+  print(result)
   
 
 
@@ -30,28 +30,28 @@ def mul(num1, num2):
   num1 = int(input(" "))
   num2 = int(input(" "))
   result = num1 * num2
-  print result 
+  print(result) 
   
   
 
 def sqr(num1):
   num1 = int(input(" "))
   result = num1 ** 2
-  print result
+  print(result)
   
  
 
 def prc(num1):
   num1 = int(input(" "))
   result = num1 / 100
-  print result
+  print(result)
   
 
 
 def log(num1):
   num1 = int(input(" "))
   result = math.log10(num1)
-  print result
+  print(result)
   
  
 
