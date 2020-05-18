@@ -4,7 +4,7 @@ import math
 
 n = int(input("Enter any integer to find its prime factors: "))
 
-print("Factors are:")
+print("Factors are: ")
 i=1
 while(i<=n):
     k=0
