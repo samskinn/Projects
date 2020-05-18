@@ -17,6 +17,6 @@ try:
   if roundint > 30:
     print "The value chosen is too high, select a lower number."
   else: 
-    print ori_exp(roundint)
+    print(ori_exp(roundint))
   except:
-    print "You haven't entered an integer"
+    print("You haven't entered an integer")
