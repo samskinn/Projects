@@ -20,5 +20,5 @@ while user_int.lower().startswith('y'):
   while prime_number(start) == False:
     start += 1
     
-    print "The next prime number is: " + str(start)
+    print("The next prime number is: " + str(start))
     user_int = raw_input("Do you want to keep finding prime numbers (y/n)? ")
