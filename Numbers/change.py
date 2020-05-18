@@ -7,7 +7,7 @@ cost = float(raw_input("What is the cost of the product? "))
 tender = float(raw_input("How much money are you giving to buy the product? "))
 
 while cost < tender:
-  print "You still owe $%.2f" % (cost - given)
+  print("You still owe $%.2f" % (cost - given))
 
 change = (cost - tender) * 100
 quart = 0
