@@ -10,6 +10,6 @@ def height(n):
         
 def cost():
   area = m * n
-  print "The area of the floor plan is " + area + "cm squared"
+  print("The area of the floor plan is " + area + "cm squared")
   price = int(input("Enter the cost for the floor plan: "))
                 
