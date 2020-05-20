@@ -8,7 +8,7 @@ def height(n):
   n = int(input("Enter the height of the tile: "))
   return n
         
-def cost():
+def cost(m, n):
   area = width(m) * height(n)
   print("The area of the floor plan is " + area + "cm squared")
   price = int(input("Enter the cost for the floor plan: "))
