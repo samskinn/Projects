@@ -18,5 +18,4 @@ try:
     print("The value chosen is too high, select a lower number.")
   else: 
     print(ori_exp(roundint))
-  except ValueError:
-    print("You haven't entered an integer")
+
