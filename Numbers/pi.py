@@ -10,9 +10,9 @@ def defining_pi(roundVal):
   pi = str(ori_pi)
   return ori_pi;
 
-round_to = raw_input("Enter how many decimal places of Pi you want: ")
+round_to = input("Enter how many decimal places of Pi you want: ")
 
-round_int = int(roundTo)
+round_int = int(round_to)
 print(defining_pi(round_int))
 if round_int > 50:
   print("Integer selected is too large")
