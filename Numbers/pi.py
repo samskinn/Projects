@@ -17,4 +17,4 @@ try:
   if round_int > 50:
     print("Integer selected is too large")
   else:
-    print ("You did not enter an integer")
+    print("You did not enter an integer")
