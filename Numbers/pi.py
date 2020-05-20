@@ -13,9 +13,8 @@ def defining_pi(roundVal):
 round_to = raw_input("Enter how many decimal places of Pi you want: ")
 try:
   round_int = int(roundTo)
+  print(defining_pi(round_int))
   if round_int > 50:
     print("Integer selected is too large")
   else:
-    print(defining_pi(round_int))
-  except:
-  print ("You did not enter an integer")
+    print ("You did not enter an integer")
