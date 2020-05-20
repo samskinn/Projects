@@ -18,6 +18,7 @@ elif n == 1:
 else: 
   print ("Fibonnaci number is " + "%d" % n)
   while counter < n:
+    count = 0
     fib = x + y
     x = y 
     y = fib
