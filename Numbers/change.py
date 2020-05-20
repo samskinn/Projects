@@ -3,11 +3,11 @@ User enters cost, amount of money given. Calculate change in quarters, dimes, ni
 """
 
 
-cost = float(raw_input("What is the cost of the product? "))
-tender = float(raw_input("How much money are you giving to buy the product? "))
+cost = float(input("What is the cost of the product? "))
+tender = float(input("How much money are you giving to buy the product? "))
 
 while cost < tender:
-  print("You still owe $%.2f" % (cost - given))
+  print("You still owe $" + "%.2f" % (cost - tender))
 
 change = (cost - tender) * 100
 quart = 0
