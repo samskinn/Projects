@@ -10,7 +10,7 @@ y = 1
 counter = 0
 
 if n < 0:
-  (print "Error! Please enter a posstive integer value")
+  print ("Error! Please enter a posstive integer value")
 elif n == 0:
   print ("Fibonnaci number is 0")
 elif n == 1:
