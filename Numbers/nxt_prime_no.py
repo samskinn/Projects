@@ -1,6 +1,6 @@
 #Finding the nex prime no until user chooses to stop
 
-user_int = raw_input("Do you want to keep finding prime numbers (y/n)? ")
+user_int = input("Do you want to keep finding prime numbers (y/n)? ")
 start = 1
 
 def prime_number(n):
@@ -21,4 +21,4 @@ while user_int.lower().startswith('y'):
     start += 1
     
     print("The next prime number is: " + str(start))
-    user_int = raw_input("Do you want to keep finding prime numbers (y/n)? ")
+    
