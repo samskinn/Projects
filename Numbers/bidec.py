@@ -26,7 +26,7 @@ if choice == 0:
   print("The decimal of %s is %s" % (number, b_to_d(number)))
   
 elif choice == 1:
-  number = raw_input("Enter the number: ")
+  number = input("Enter the number: ")
   print ("The binary of %s is %s" % (number, d_to_b(number))) 
   
 else:
