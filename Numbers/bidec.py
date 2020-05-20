@@ -17,17 +17,17 @@ def d_to_b(number):
     number = number / 2
   return binary[::-1]
 
-print('Enter 0 for binary to decimal conversion')
-print('Enter 1 for decimal to binary conversion')
+print("Enter 0 for binary to decimal conversion")
+print("Enter 1 for decimal to binary conversion")
 
-choice = raw_input("Enter the conversion type: ")
+choice = input("Enter the conversion type: ")
 if choice == 0:
-  number = raw_input("Enter the number: ")
+  number = input("Enter the number: ")
   print("The decimal of %s is %s" % (number, b_to_d(number)))
   
 elif choice == 1:
   number = raw_input("Enter the number: ")
-  print (The binary of %s is %s" 5 (number, d_to_b(number))) 
+  print ("The binary of %s is %s" % (number, d_to_b(number))) 
   
 else:
   print("Invalid choice")
