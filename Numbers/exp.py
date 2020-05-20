@@ -11,12 +11,12 @@ def ori_exp(roundVal):
   the_exp = round(math.exp(x), roundVal)
   
 
-roundTo = raw_input("How many decimal places of e do you require? ")
+roundTo = input("How many decimal places of e do you require? ")
 try:
   roundint = int(roundTo)
   if roundint > 30:
-    print "The value chosen is too high, select a lower number."
+    print("The value chosen is too high, select a lower number.")
   else: 
     print(ori_exp(roundint))
-  except:
+  except ValueError:
     print("You haven't entered an integer")
