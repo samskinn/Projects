@@ -70,35 +70,35 @@ def temp():
     5. Kelvin to Celsius 
     6. Kelvin to Fahrenheit"""
   
-    choice = int(raw_input("Enter conversion type: "))
+    choice = int(input("Enter conversion type: "))
     
     if choice == 1:
-      degrees = int(raw_input("Enter temperature to convert: "))
+      degrees = int(input("Enter temperature to convert: "))
       result = (degrees * 1.8) + 32
       unit = 'F'
      
     elif choice == 2:
-      degrees = int(raw_input("Enter temperature to convert: "))
+      degrees = int(input("Enter temperature to convert: "))
       result = degrees + 273.15
       unit = 'K'
       
     elif choice == 3:
-      degrees = int(raw_input("Enter temperature to convert: "))
+      degrees = int(input("Enter temperature to convert: "))
       result = (degrees - 32) / 1.8
       unit = 'C'
       
     elif choice == 4:
-      degrees = int(raw_input("Enter temperature to convert: "))
+      degrees = int(input("Enter temperature to convert: "))
       result = ((degrees - 32) / 1.8) + 273.15
       unit = 'K'
       
     elif choice == 5:
-      degrees = int(raw_input("Enter temperature to convert: "))
+      degrees = int(input("Enter temperature to convert: "))
       result = degrees - 273.15
       unit = 'C'
       
     elif choice = 6:
-      degrees = int(raw_input("Enter temperature to convert: "))
+      degrees = int(input("Enter temperature to convert: "))
       result = ((degrees -273.15) * 1.8) + 32
       unit = 'F'
       
@@ -110,23 +110,23 @@ def temp():
                               
 def do_convert(conversion):
   conversion_units = ','.join(CONVERT_FROM[conversion].keys())
-  amount = float(raw_input("Enter conversion amount:"))
-  source_unit = raw_input("Enter source unit(%s):" % conversion_units)
-  to_unit = raw_input("Enter unit to convert to (%s):" % conversion_units)
+  amount = float(input("Enter conversion amount:"))
+  source_unit = input("Enter source unit(%s):" % conversion_units)
+  to_unit = input("Enter unit to convert to (%s):" % conversion_units)
   
   print "%s %s's equals %f %s's" % (amount, source_unit, amount * \ 
                                     CONVERT_FROM[conversion][source_unit] * \
                                     CONVERT_TO[conversion][to_unit], to_unit)
   
 def currency():
-  amount = str(raw_input("Enter amount to convert: "))
-  from_currency = str(raw_input("Enter your source currency(3 digit code): "))
-  to_currency = str(raw_input("Enter the currency you would like to convert to(3 digit code): "))
+  amount = str(input("Enter amount to convert: "))
+  from_currency = str(input("Enter your source currency(3 digit code): "))
+  to_currency = str(input("Enter the currency you would like to convert to(3 digit code): "))
   
   request = urlopen('http://rate-exchange.appspot.com/currency?from=' + from_currency + '&to=' + to_currency + '&q=' + amount)
   response = json.loads(request.read())
   
-  print "%s %s is equal to %f %s" % (amount, from_currency, float(response['v']), to_currency)
+  print("%s %s is equal to %f %s" % (amount, from_currency, float(response['v']), to_currency))
   
                                      
 print """1: Temperature
@@ -148,7 +148,7 @@ elif input == 4:
 elif input == 5:
   currency()
 else:
-  print "Invalid selection"
+  print ("Invalid selection")
                                      
                                      
   
